@@ -1,17 +1,16 @@
 using System;
 
-public class TidalAlbum: IComparable<TidalAlbum>
+public class TidalAlbum: IComparable<TidalAlbum>, IEquatable<TidalAlbum>
 {
     public string Artist { get; set; }
     public string Title { get; set; }
 
-    public TidalAlbum()
-    {
+    public TidalAlbum(){
         Artist = null;
         Title = null;
     }
-    public TidalAlbum(string artist, string title)
-    {
+
+    public TidalAlbum(string artist, string title){
         Artist = artist;
         Title = title;
     }
@@ -26,7 +25,12 @@ public class TidalAlbum: IComparable<TidalAlbum>
         }
     }
 
-    public override string ToString(){
-        return $"{Artist} - {Title}";
+    public override string ToString() => $"{Artist} - {Title}";
+    
+    public bool Equals(TidalAlbum other){
+        if (other == null) return false;
+
+        return (string.Compare(Artist, other.Artist, true) == 0 && string.Compare(Title, other.Title, true) == 0);
     }
+
 }
