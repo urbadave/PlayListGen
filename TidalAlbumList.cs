@@ -32,9 +32,12 @@ public class TidalAlbumList
 
     public TidalAlbumList AddAlbums(List<TidalAlbum> source)
     {
-        if(source != null){
-            source.ForEach(a => {
-                if(!Albums.Contains(a)){
+        if (source != null)
+        {
+            source.ForEach(a =>
+            {
+                if (!Albums.Contains(a))
+                {
                     Albums.Add(a);
                 }
             });
@@ -46,7 +49,7 @@ public class TidalAlbumList
     public TidalAlbumList RemoveAlbum(TidalAlbum album)
     {
         var foundAlbum = Albums.Find(a => a.Equals(album));
-        if(foundAlbum != null)
+        if (foundAlbum != null)
         {
             Albums.Remove(foundAlbum);
         }
@@ -55,14 +58,50 @@ public class TidalAlbumList
 
     public TidalAlbumList RemoveAlbums(List<TidalAlbum> source)
     {
-        if(source != null)
+        if (source != null)
         {
             TidalAlbum foundAlbum = null;
-            source.ForEach(a => {
-               foundAlbum = Albums.Find(al => al.Equals(a));
-               if(foundAlbum != null) Albums.Remove(foundAlbum);
+            source.ForEach(a =>
+            {
+                foundAlbum = Albums.Find(al => al.Equals(a));
+                if (foundAlbum != null) Albums.Remove(foundAlbum);
             });
         }
         return this;
     }
+
+    public TidalAlbumList RandomSublist(int size)
+    {
+        if (size > Albums.Count)
+            throw new ArgumentException("Size cannot exceed library size");
+
+        var retVal = new TidalAlbumList();
+        if (size < Albums.Count)
+        {
+            //create a random list of indexes.
+            var indexList = new List<int>();
+            Random r = new Random();
+            for (var i = 0; i < size; i++)
+            {
+                int index = r.Next(Albums.Count);
+                if (!indexList.Contains(index)) indexList.Add(index);
+            }
+
+            //create list of artists used
+            var artists = new List<string>();
+
+            //foreach index, add album to list, if artist doesn't appear in hash
+            indexList.ForEach(i =>
+            {
+                var album = Albums[i];
+                if (!artists.Contains(album.Artist))
+                {
+                    retVal.AddAlbum(album);
+                    artists.Add(album.Artist);
+                }
+            });
+        }
+        return retVal;
+    }
+
 }
