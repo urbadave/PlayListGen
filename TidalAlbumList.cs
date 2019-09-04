@@ -1,31 +1,41 @@
 using System;
 using System.Collections.Generic;
 
-public class TidalAlbumList
+public enum ListState { sorted, random };
+
+public class TidalAlbumList : List<TidalAlbum>
 {
     public string Name { get; set; }
 
-    public List<TidalAlbum> Albums { get; set; }
+    public ListState State { get; set; }
 
-    public TidalAlbumList()
+    public TidalAlbumList() : base()
     {
         Name = string.Empty;
-        Albums = new List<TidalAlbum>();
+        State = ListState.sorted;
     }
 
     public TidalAlbumList(string name, List<TidalAlbum> source) : this()
     {
         Name = name;
-        Albums = new List<TidalAlbum>(source);
-        Albums.Sort();
+        source.ForEach(a => Add(a));
+        Sort();
+    }
+
+    public TidalAlbum GetAlbumAt(int index)
+    {
+        if (index > Count)
+            throw new ArgumentException($"{index} greater than album count");
+        return this[index];
     }
 
     public TidalAlbumList AddAlbum(TidalAlbum album)
     {
-        if (!Albums.Contains(album))
+        if (!Contains(album))
         {
-            Albums.Add(album);
-            Albums.Sort();
+            Add(album);
+            if (State == ListState.sorted)
+                Sort();
         }
         return this;
     }
@@ -36,22 +46,32 @@ public class TidalAlbumList
         {
             source.ForEach(a =>
             {
-                if (!Albums.Contains(a))
+                if (!Contains(a))
                 {
-                    Albums.Add(a);
+                    Add(a);
                 }
             });
-            Albums.Sort();
+            if (State == ListState.sorted)
+                Sort();
         }
         return this;
     }
 
     public TidalAlbumList RemoveAlbum(TidalAlbum album)
     {
-        var foundAlbum = Albums.Find(a => a.Equals(album));
+        var foundAlbum = Find(a => a.Equals(album));
         if (foundAlbum != null)
         {
-            Albums.Remove(foundAlbum);
+            Remove(foundAlbum);
+        }
+        return this;
+    }
+
+    public TidalAlbumList RemoveAlbum(int index)
+    {
+        if (index < Count)
+        {
+            RemoveAt(index);
         }
         return this;
     }
@@ -63,8 +83,8 @@ public class TidalAlbumList
             TidalAlbum foundAlbum = null;
             source.ForEach(a =>
             {
-                foundAlbum = Albums.Find(al => al.Equals(a));
-                if (foundAlbum != null) Albums.Remove(foundAlbum);
+                foundAlbum = Find(al => al.Equals(a));
+                if (foundAlbum != null) Remove(foundAlbum);
             });
         }
         return this;
@@ -72,35 +92,41 @@ public class TidalAlbumList
 
     public TidalAlbumList RandomSublist(int size)
     {
-        if (size > Albums.Count)
+        if (size > Count)
             throw new ArgumentException("Size cannot exceed library size");
 
-        var retVal = new TidalAlbumList();
-        if (size < Albums.Count)
+        var randomList = GetRandomized();
+        var retVal = new TidalAlbumList() { State = ListState.random };
+        for (var i = 0; i < size; i++)
         {
-            //create a random list of indexes.
-            var indexList = new List<int>();
-            Random r = new Random();
-            for (var i = 0; i < size; i++)
-            {
-                int index = r.Next(Albums.Count);
-                if (!indexList.Contains(index)) indexList.Add(index);
-            }
-
-            //create list of artists used
-            var artists = new List<string>();
-
-            //foreach index, add album to list, if artist doesn't appear in hash
-            indexList.ForEach(i =>
-            {
-                var album = Albums[i];
-                if (!artists.Contains(album.Artist))
-                {
-                    retVal.AddAlbum(album);
-                    artists.Add(album.Artist);
-                }
-            });
+            retVal.AddAlbum(randomList.GetAlbumAt(i));
         }
+
+        return retVal;
+    }
+
+    public TidalAlbumList GetRandomized()
+    {
+        var retVal = new TidalAlbumList() { State = ListState.random };
+        var copy = new TidalAlbumList(Name, this);
+
+        var random = new Random();
+
+        while (copy.Count > 0)
+        {
+            if (copy.Count == 1)
+            {
+                retVal.AddAlbum(copy.GetAlbumAt(0));
+                copy.RemoveAlbum(0);
+            }
+            else
+            {
+                var index = random.Next(copy.Count);
+                retVal.AddAlbum(copy.GetAlbumAt(index));
+                copy.RemoveAlbum(index);
+            }
+        }
+
         return retVal;
     }
 

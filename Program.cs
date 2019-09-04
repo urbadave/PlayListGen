@@ -177,10 +177,10 @@ namespace PlayListGen
             var masterList = new TidalAlbumList();
             masterList.AddAlbums(sourceList);
 
-            var count = masterList.Albums.Count;
+            var count = masterList.Count;
 
-            var playlist = masterList.RandomSublist(16);
-            count = playlist.Albums.Count;
+            var playList = masterList.RandomSublist(16);
+			masterList.RemoveAlbums(playList);
         }
     }
 }
