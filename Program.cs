@@ -181,6 +181,8 @@ namespace PlayListGen
 
             var playList = masterList.RandomSublist(16);
 			masterList.RemoveAlbums(playList);
+
+			playList.ForEach(a => Console.WriteLine(a));
         }
     }
 }
