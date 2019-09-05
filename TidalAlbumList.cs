@@ -95,7 +95,7 @@ public class TidalAlbumList : List<TidalAlbum>
         if (size > Count)
             throw new ArgumentException("Size cannot exceed library size");
 
-        var randomList = GetRandomized();
+        var randomList = RandomCopy();
         var retVal = new TidalAlbumList() { State = ListState.random };
         for (var i = 0; i < size; i++)
         {
@@ -105,7 +105,7 @@ public class TidalAlbumList : List<TidalAlbum>
         return retVal;
     }
 
-    public TidalAlbumList GetRandomized()
+    public TidalAlbumList RandomCopy()
     {
         var retVal = new TidalAlbumList() { State = ListState.random };
         var copy = new TidalAlbumList(Name, this);
