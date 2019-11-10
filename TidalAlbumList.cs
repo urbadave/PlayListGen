@@ -91,6 +91,21 @@ public class TidalAlbumList : List<TidalAlbum>
         return this;
     }
 
+    public void AssignPlaylist(List<TidalAlbum> source, string playListName)
+    {
+        TidalAlbum foundAlbum = null;
+        if(source != null)
+        {
+            source.ForEach(a =>
+            {
+                foundAlbum = Find(al => al.Equals(a));
+                if(foundAlbum != null){
+                    foundAlbum.PlayList = playListName;
+                }
+            });
+        }
+    }
+
     public TidalAlbumList RandomSublist(int size)
     {
         if (size > Count)
@@ -105,6 +120,7 @@ public class TidalAlbumList : List<TidalAlbum>
 
         return retVal;
     }
+
 
     public TidalAlbumList AvailableList()
     {

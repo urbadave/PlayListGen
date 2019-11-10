@@ -22,7 +22,15 @@ namespace PlayListGen
             var count = masterList.Count;
 
             var playList = masterList.RandomSublist(16);
-			masterList.RemoveAlbums(playList);
+			var playListName = "PLXX";
+			playList.ForEach(ta => ta.PlayList = playListName);
+			masterList.AssignPlaylist(playList, playListName);
+			var afterCount = masterList.AvailableList().Count;
+
+			using (StreamWriter writer = new StreamWriter("Playlist.txt", false))
+			{
+				playList.ForEach(ta => writer.WriteLine($"{ta.Artist}\t{ta.Title}\t{ta.PlayList}"));
+			}
 
 			playList.ForEach(a => Console.WriteLine(a));
 			Console.ReadLine();
