@@ -10,6 +10,19 @@ public class TidalAlbumList : List<TidalAlbum>
 
     public ListState State { get; set; }
 
+    public int? _maxArtistLength;
+    public int MaxArtistLength
+    {
+        get
+        {
+            if(_maxArtistLength == null && this.Any())
+            {
+                 _maxArtistLength = this.AsEnumerable().Max(a => a.Artist.Length);
+            }
+            return _maxArtistLength.Value;
+        }
+    }
+
     public TidalAlbumList() : base()
     {
         Name = string.Empty;
@@ -35,6 +48,7 @@ public class TidalAlbumList : List<TidalAlbum>
         if (!Contains(album))
         {
             Add(album);
+            _maxArtistLength = null;
             if (State == ListState.sorted)
                 Sort();
         }
@@ -45,6 +59,7 @@ public class TidalAlbumList : List<TidalAlbum>
     {
         if (source != null)
         {
+            _maxArtistLength = null;
             source.ForEach(a =>
             {
                 if (!Contains(a))
@@ -63,6 +78,7 @@ public class TidalAlbumList : List<TidalAlbum>
         var foundAlbum = Find(a => a.Equals(album));
         if (foundAlbum != null)
         {
+            _maxArtistLength = null;
             Remove(foundAlbum);
         }
         return this;
@@ -72,6 +88,7 @@ public class TidalAlbumList : List<TidalAlbum>
     {
         if (index < Count)
         {
+            _maxArtistLength = null;
             RemoveAt(index);
         }
         return this;
@@ -81,6 +98,7 @@ public class TidalAlbumList : List<TidalAlbum>
     {
         if (source != null)
         {
+            _maxArtistLength = null;
             TidalAlbum foundAlbum = null;
             source.ForEach(a =>
             {
@@ -121,7 +139,6 @@ public class TidalAlbumList : List<TidalAlbum>
         return retVal;
     }
 
-
     public TidalAlbumList AvailableList()
     {
         var available = this.AsEnumerable().Where(ta => ta.IsAvailable).ToList();
@@ -153,4 +170,12 @@ public class TidalAlbumList : List<TidalAlbum>
         return retVal;
     }
 
+    public List<string> ToStringList()
+    {
+        var crucialValue = this.MaxArtistLength;
+        var retVal = new List<string>();
+        retVal.Add(Name);
+        this.ForEach(ta => retVal.Add(ta.ToPrettyString(crucialValue)));
+        return retVal;
+    }
 }

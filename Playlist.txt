@@ -1,16 +1,306 @@
-Michael Jackson	Off The Wall	PLXX
-Death Cab For Cutie	Narrow Stairs	PLXX
-The Postal Service	Give Up	PLXX
-Sting	The Dream Of The Blue Turtles	PLXX
-Pink Floyd	The Wall	PLXX
-Mumford & Sons	Babel	PLXX
-The Shins	Port Of Morrow	PLXX
-The Wallflowers	Glad All Over	PLXX
-Bastille	Bad Blood	PLXX
-The xx	The xx	PLXX
-Fall Out Boy	American Beauty/American Psycho	PLXX
-Ryan Shupe and the Rubber Band	Simplify	PLXX
-Sting	...Nothing Like The Sun	PLXX
-Augustana	Life Imitating Life	PLXX
-The 1975	The 1975	PLXX
-Queen	The Game	PLXX
+PL39
+Meat Loaf              Bat Out Of Hell
+Red Hot Chili Peppers  Stadium Arcadium
+Ed Sheeran             +
+Yeasayer               Odd Blood
+Alphaville             Forever Young
+Foster The People      Torches
+Chvrches               Every Open Eye
+Bruce Springsteen      Born In The U.S.A.
+Arcade Fire            Neon Bible
+Alanis Morissette      Jagged Little Pill
+Green Day              ¡DOS!
+Blues Traveller        Hurry Up and Hang Around
+Green Day              ¡TRÉ!
+Bruce Springsteen      Darkness On The Edge Of Town
+Of Monsters And Men    My Head Is An Animal
+KT Tunstall            KIN
+
+PL40
+Maroon 5                  Songs About Jane
+Vampire Weekend           Father Of The Bride
+The Offspring             Days Go By
+Gossip                    A Joyful Noise
+Of Monsters And Men       FEVER DREAM
+Blitzen Trapper           VII
+Neon Trees                Pop Psychology
+Augustana                 Life Imitating Life
+KT Tunstall               Eye To The Telescope
+Moon Taxi                 Let The Record Play
+Lupe Fiasco               Lupe Fiasco's The Cool
+Lorde                     Pure Heroine
+Tears For Fears           Sowing The Seeds Of Love
+Electric Light Orchestra  Time
+Weezer                    Pacific Daydream
+Young the Giant           Home Of The Strange
+
+PL41
+St. Vincent               St. Vincent
+Lady Gaga                 The Fame Monster
+Kasabian                  Velociraptor!
+The All-American Rejects  Move Along
+Plain White T's           Wonders Of The Younger
+Sting                     The Dream Of The Blue Turtles
+Weezer                    Weezer (Blue Album)
+Coast Modern              Coast Modern
+Young the Giant           Mirror Master
+The Fray                  How To Save A Life
+Portishead                Dummy
+Michael Franti            The Sound Of Sunshine
+Kasabian                  West Ryder Pauper Lunatic Asylum
+Matisyahu                 Spark Seeker
+Spoon                     Ga Ga Ga Ga Ga
+Seether                   Holding Onto Strings Better Left To Fray
+
+PL42
+USS (Ubiquitous Synergy Seeker)  Questamation
+The Shins                        Heartworms
+Panic! At The Disco              Pray For The Wicked
+Kansas                           Point Of Know Return
+Weezer                           Black Album
+The xx                           The xx
+Silversun Pickups                Carnavas
+GRiZ                             Ride Waves
+3 Doors Down                     The Greatest Hits
+Milky Chance                     Blossom
+Joe Jackson                      Look Sharp!
+The National                     High Violet
+Lifehouse                        Who We Are
+Chvrches                         The Bones Of What You Believe
+The Raconteurs                   Consolers Of The Lonely
+Spoon                            Transference
+
+PL43
+Tom Petty          Damn The Torpedos
+Yaz                Upstairs At Eric's
+Rudimental         Toast To Our Differences
+Shiny Toy Guns     Season Of Poison
+twenty one pilots  Blurryface
+Bruce Springsteen  Wrecking Ball
+Gotye              Making Mirrors
+Snow Patrol        Eyes Open
+Logic              Confessions Of A Dangerous Mind
+LCD Soundsystem    This Is Happening
+Santana            Supernatural
+Green Day          American Idiot
+Led Zeppelin       IV
+Foals              Everything Not Saved Will Be Lost Part 1
+Civil Twilight     Holy Weather
+Ozomotli           Non-Stop: Mexico To Jamaica
+
+PL44
+Kimbra                            Vows
+Divine Fits                       A Thing Called Divine Fits
+Blue October                      Foiled
+Jonsi                             Go
+Modest Mouse                      Good News for People Who Love Bad News
+Gossip                            Music For Men
+M83                               Hurry Up, We're Dreaming
+Ingird Michaelson                 Lights Out
+Foreigner                         Double Vision
+The Doors                         L.A. Woman
+Queen                             The Game
+The Pains Of Being Pure At Heart  Days Of Abandon
+OneRepublic                       Waking Up
+Cake                              Prolonging The Magic
+The Head And The Heart            Living Mirage
+The 1975                          The 1975
+
+PL45
+Macklemore & Ryan Lewis  The Heist
+Nirvana                  Nevermind
+The Fratellis            In Your Own Sweet Time
+Kate Bush                Hounds of Love
+Metric                   Art Of Doubt
+2pac                     All Eyez On Me
+Augustana                Augustana
+Ryan Bingham             Junky Star
+Vampire Weekend          Contra
+Fall Out Boy             From Under The Cork Tree
+Fall Out Boy             American Beauty/American Psycho
+Christina Perri          Lovestrong
+Awolnation               Here Come The Runts
+Bebe                     Y.
+SYML                     SYML
+Plan B                   Heaven Before All Hell Breaks Loose
+
+PL46
+I Fight Dragons            Kaboom!
+P!nk                       Try This
+Michael Jackson            Off The Wall
+Pete Townshend             Empty Glass
+Boogie                     Everythings For Sale
+Billy Joel                 The Stranger
+Gorillaz                   Demon Days
+The Shins                  Wincing The Night Away
+Dropkick Murpheys          SIGNED And SEALED In BLOOD
+Broken Bells               Broken Bells
+G. Love And Special Sauce  Yeah, It's That Easy
+Journey                    Departure
+B.o.B.                     Strange Clouds
+Evanescence                Evanescence
+Shaggy                     Wah Gwaan?!
+Shinedown                  Amaryllis
+
+PL47
+Weezer                   Weezer (Teal Album)
+Blue Oyster Cult         Spectres
+Sting                    ...Nothing Like The Sun
+Passion Pit              Kindred
+Silversun Pickups        Swoon
+The Who                  Who's Next
+Arcade Fire              The Suburbs
+Muse                     Simulation Theory
+Led Zeppelin             Physical Graffiti
+Silversun Pickups        Neck Of The Woods
+Maroon 5                 Hands All Over
+The Wallflowers          Glad All Over
+Queens Of The Stone Age  Villains
+The Naked And Famous     Passive Me, Aggressive You
+Everclear                Invisible Stars
+Wild Belle               Isles
+
+PL48
+Nothing More        The Stories We Tell Ourselves
+Spoon               Hot Thoughts
+The Postal Service  Give Up
+Mister Wives        Connect The Dots
+Blitzen Trapper     Furr
+Berlin              Love Life
+Blondie             Eat To The Beat
+The Cars            Candy-O
+Gin Wigmore         Holy Smoke
+Massive Attack      Blue Lines
+Brandi Carlile      Bear Creek
+Imagine Dragons     Smoke + Mirrors
+The Cranberries     In The End
+Bonde do Rolê       Tropicalbacanal
+Depeche Mode        Violator
+Eurythmics          Ultimate Collection
+
+PL49
+The Cure                   Kiss Me, Kiss Me, Kiss Me
+Supertramp                 Crime Of The Century
+Death Cab For Cutie        Codes And Keys
+The Decemberists           I'll Be Your Girl
+The Shins                  Port Of Morrow
+Wisin                      Victory
+London Grammar             If You Wait
+Shovels & Rope             O Be Joyful
+G. Love And Special Sauce  G. Love And Special Sauce
+Death Cab For Cutie        Narrow Stairs
+Cake                       Comfort Eagle
+K.Flay                     Every Where Is Some Where
+Pet Shop Boys              Please
+Pink Floyd                 The Wall
+P!nk                       The Truth About Love
+The Gaslight Anthem        Handwritten
+
+PL50
+Smashing Pumpkins       Oceania
+Snow Patrol             Wildness
+KT Tunstall             Tiger Suit
+Falling In Reverse      Coming Home
+Welshly Arms            No Place Is Home
+The Head And The Heart  Let's Be Still
+Beck                    The Information
+Imagine Dragons         Night Visions
+Amy Winehouse           Back To Black
+Nothing But Thieves     Nothing But Thieves
+Led Zeppelin            Led Zeppelin III (2014 Remaster)
+Eminem                  Kamikaze
+Michael Franti          Yell Fire!
+Blue Oyster Cult        Cultosauros Erectus
+The Heavy               The Glorious Dead
+Queen                   News Of The World
+
+PL51
+Dropkick Murpheys      Going Out In Style
+Young The Giant        Mind Over Matter
+Mumford & Sons         Sigh No More
+Green Day              ¡UNO!
+Fitz And The Tantrums  More Than Just A Dream
+Wissin Y Yandel        Líderes
+The Killers            Wonderful Wonderful
+Ryan Bingham           Mescalito
+OneRepublic            Dreaming Out Loud
+The Lone Bellow        Walking Into A Storm
+Julian Casablancas     Phrazes For The Young
+ZZ Top                 Eliminator
+Sweet                  Desolation Boulevard
+Volbeat                Guitar Gangsters & Cadillac Blood
+Linkin Park            Meteora
+Beck                   Odelay
+
+PL52
+Belly               Immigrant
+The Black Keys      Brothers
+Neon Trees          Picture Show
+Blues Traveller     Four
+Ferdinand the Bull  Painting Over Pictures
+Toto                IV
+Dengue Fever        The Deepest Lake
+Walk Off The Earth  Sing It All Away
+The Killers         Hot Fuss
+Shovels & Rope      Swimmin Time
+Rodrigo Y Gabriela  Rodrigo Y Gabriela
+Ozomotli            Embrace The Chaos
+Murs                A Strange Journey Into The Unimaginable
+OneRepublic         Native
+Ed Sheeran          x
+The B-52s           The B-52s
+
+PL53
+fun.                            Some Nights
+Blitzen Trapper                 Wild And Reckless
+Metric                          Synthetica
+Chris Stapleton                 From A Room: Volume 1
+Orishas                         Gourmet
+Queen                           A Night At The Opera
+Muse                            The Resistance
+Bob Dylan                       Blood On The Tracks
+Sixpence None The Richer        Lost In Translation
+Michael Franti                  All Rebel Rockers
+Prophets of Rage                Prophets or Rage
+Evanescence                     Fallen
+Audioslave                      Audioslave
+Ryan Shupe and the Rubber Band  Simplify
+Band Of Skulls                  Baby Darling Doll Face Honey
+Jet                             Get Born
+
+PL54
+Fall Out Boy           M A N I A
+LCD Soundsystem        Sound Of Silver
+Queen                  Jazz
+Slow Club              Complete Surrender
+Stick Figure           Set In Stone
+Red Hot Chili Peppers  Californication
+Band Of Skulls         Love Is All You Love
+The Gaslight Anthem    The '59 Sound
+Nirvana                Nirvana
+Lifehouse              Almeria
+The Sheepdogs          Changing Colours
+Bebe                   Un Pokito De Rocanrol
+The Heavy              The House That Dirt Built
+Blondie                Parallel Lines
+Indigo Girls           Rites of Passage
+Everclear              So Much For The Afterglow
+
+PL55
+Isreal Kamakawiwo'ole  Facing Future
+Switchfoot             Fading West
+The Civil Wars         Barton Hollow
+Adele                  21
+Panda Bear             Panda Bear Meets The Grim Reaper
+Vic Mensa              The Autobiography
+The Cars               The Cars
+Lupe Fiasco            Lasers
+Metric                 Fantasies
+Mumford & Sons         Babel
+Violent Femmes         Violent Femmes
+Billy Joel             52nd Street
+Fort Minor             The Rising Tied
+The Sheepdogs          The Sheepdogs
+Bastille               Bad Blood
+Warren Zevon           Excitable Boy
+

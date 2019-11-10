@@ -17,23 +17,25 @@ namespace PlayListGen
 				   line = reader.ReadLine();
 			   }
 			}
-			var dataCount = masterList.Count;
+			
+			var startNumber = 39;
+			var availableCount = masterList.AvailableList().Count;
 
-            var count = masterList.Count;
-
-            var playList = masterList.RandomSublist(16);
-			var playListName = "PLXX";
-			playList.ForEach(ta => ta.PlayList = playListName);
-			masterList.AssignPlaylist(playList, playListName);
-			var afterCount = masterList.AvailableList().Count;
-
-			using (StreamWriter writer = new StreamWriter("Playlist.txt", false))
+			using (StreamWriter writer = new StreamWriter("Playlist.txt",false))
 			{
-				playList.ForEach(ta => writer.WriteLine($"{ta.Artist}\t{ta.Title}\t{ta.PlayList}"));
+				while(availableCount > 16)
+				{
+					var playList = masterList.AvailableList().RandomSublist(16);
+					var playListName = $"PL{startNumber++}";
+					playList.Name = playListName;
+					playList.ForEach(ta => ta.PlayList = playListName);
+					masterList.AssignPlaylist(playList, playListName);
+					var outPut = playList.ToStringList();
+					outPut.ForEach(l => writer.WriteLine(l));
+					availableCount = masterList.AvailableList().Count;
+					writer.WriteLine();
+				}
 			}
-
-			playList.ForEach(a => Console.WriteLine(a));
-			Console.ReadLine();
         }
     }
 }

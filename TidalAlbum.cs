@@ -34,6 +34,13 @@ public class TidalAlbum: IComparable<TidalAlbum>, IEquatable<TidalAlbum>
         }
     }
 
+    public string ToPrettyString(int maxArtistLength)
+    {
+        var paddingSize = maxArtistLength + 2;
+        var artistName = Artist.PadRight(paddingSize, ' ');
+        return $"{artistName}{Title}";
+    }
+
     public override string ToString() => $"{Artist} - {Title}";
     
     public bool Equals(TidalAlbum other){
