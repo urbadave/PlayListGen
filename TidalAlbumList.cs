@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public enum ListState { sorted, random };
 
@@ -103,6 +104,12 @@ public class TidalAlbumList : List<TidalAlbum>
         }
 
         return retVal;
+    }
+
+    public TidalAlbumList AvailableList()
+    {
+        var available = this.AsEnumerable().Where(ta => ta.IsAvailable).ToList();
+        return new TidalAlbumList("available", available);
     }
 
     public TidalAlbumList RandomCopy()

@@ -4,16 +4,25 @@ public class TidalAlbum: IComparable<TidalAlbum>, IEquatable<TidalAlbum>
 {
     public string Artist { get; set; }
     public string Title { get; set; }
+    public string PlayList {get; set;}
+
+    public bool IsAvailable{ get {return string.IsNullOrWhiteSpace(PlayList);}}
 
     public TidalAlbum(){
         Artist = null;
         Title = null;
+        PlayList = null;
     }
 
     public TidalAlbum(string artist, string title){
         Artist = artist;
         Title = title;
     }
+
+    public TidalAlbum(string artist, string title, string playList) : this(artist, title){
+        PlayList = playList;
+    }
+
 
     public int CompareTo(TidalAlbum other){
         if(other == null) return -1;
