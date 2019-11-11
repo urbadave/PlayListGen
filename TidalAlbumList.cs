@@ -131,9 +131,27 @@ public class TidalAlbumList : List<TidalAlbum>
 
         var randomList = RandomCopy();
         var retVal = new TidalAlbumList() { State = ListState.random };
-        for (var i = 0; i < size; i++)
+
+        var index = 0;
+        while(retVal.Count < size)
         {
-            retVal.AddAlbum(randomList.GetAlbumAt(i));
+            //if retVal already contains an album with the potential artist, skip, size permitting
+            var albumToAdd = randomList.GetAlbumAt(index);
+
+            if(retVal.Any(a => a.Artist == albumToAdd.Artist)){
+                //see if we have enough room.
+                var stillToAdd = size - retVal.Count;
+                var sourceAlbumsLeft = randomList.Count - (index+1);
+                //just skip one. If it's that artist again, it was meant to be.
+                if(stillToAdd <= sourceAlbumsLeft)
+                {
+                    index++;
+                    albumToAdd = randomList.GetAlbumAt(index);
+                }
+            }
+
+            retVal.AddAlbum(albumToAdd);
+            index++;
         }
 
         return retVal;
