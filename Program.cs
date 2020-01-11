@@ -9,7 +9,7 @@ namespace PlayListGen
         static void Main(string[] args)
         {
 			var masterList = new TidalAlbumList(){Name = "From file"};
-			using (StreamReader reader = new StreamReader("Data.txt")){
+			using (StreamReader reader = new StreamReader("Data2.txt")){
 			   var line = reader.ReadLine();
 			   while(line != null){
 				   var parts = line.Split('\t');
@@ -18,10 +18,10 @@ namespace PlayListGen
 			   }
 			}
 			
-			var startNumber = 39;
+			var startNumber = 56;
 			var availableCount = masterList.AvailableList().Count;
 
-			using (StreamWriter writer = new StreamWriter("Playlist.txt",false))
+			using (StreamWriter writer = new StreamWriter("Playlist2.txt",false))
 			{
 				while(availableCount > 16)
 				{
